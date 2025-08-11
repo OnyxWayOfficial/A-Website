@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minimal Website</title>
+  <meta name="description" content="A minimal, responsive website template for GitHub Pages." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">MySite</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Beautiful, minimal website</h1>
+        <p>Static, fast, and easy to host on GitHub Pages. Includes responsive layout and a small vanilla JS script.</p>
+        <p><a class="btn" href="#features">See features</a></p>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <article>
+        <h2>Fast</h2>
+        <p>Small footprint, optimized HTML/CSS/JS for fast load times.</p>
+      </article>
+      <article>
+        <h2>Responsive</h2>
+        <p>Works great on mobile, tablet and desktop with a fluid layout.</p>
+      </article>
+      <article>
+        <h2>Easy to customize</h2>
+        <p>Clear structure and CSS variables so you can adapt the theme quickly.</p>
+      </article>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About this template</h2>
+      <p>Drop these files into a new GitHub repository and enable Pages (or use the included Action) to publish.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label>
+          Your email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send (demo)</button>
+        <p class="note">This is a static demo form — it shows a success message but does not send anything.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> MySite • Built for GitHub Pages</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
